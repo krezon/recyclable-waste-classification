@@ -16,7 +16,7 @@ The goal is to **classify recyclable and household waste** into the correct cate
   - Advanced methods: **MixUp**, **Label Smoothing**, **Cosine Annealing LR Scheduler**
 
 > 📓 Technical explanations are provided directly inside the notebook  
-> [`recyclable-waste-classification.ipynb`](./recyclable-waste-classification.ipynb) with detailed markdown cells.
+> [`recyclable-waste-classification.ipynb`](./waste-classification.ipynb) with detailed markdown cells.
 
 ---
 
