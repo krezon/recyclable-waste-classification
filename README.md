@@ -51,5 +51,5 @@ This project provides a **solid foundation for AI-powered environmental solution
 ---
 
 ## 🔗 Links
-- 📂 [Kaggle Dataset](https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification)
+- 📂 [Kaggle_Project]([https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification](https://www.kaggle.com/code/mehmetselimdere/waste-classification))
 
