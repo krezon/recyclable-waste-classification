@@ -1,65 +1,55 @@
-Recyclable Waste Classification
+# ♻️ Recyclable Waste Classification
 
-This repository contains an image classification project developed as part of the Global AI Hub bootcamp. The goal is to classify recyclable and household waste into the correct categories using deep learning.
+This repository contains an **image classification** project developed as part of the *Global AI Hub Bootcamp*.  
+The goal is to **classify recyclable and household waste** into the correct categories using deep learning.
 
-📌 Introduction
+---
 
-The dataset used: Recyclable and Household Waste Classification Dataset
+## 📌 Introduction
+- **Dataset:** [Recyclable and Household Waste Classification Dataset](https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification)
+- **Classes:** 30 categories (~500 images per class)
+- **Format:** All images are in `.png` format  
+- **Model:** [EfficientNet-B0](https://arxiv.org/abs/1905.11946)
+- **Techniques Used:**  
+  - Data augmentation (Random crop, rotation, color jitter, horizontal flip)  
+  - Transfer learning with fine-tuning  
+  - Advanced methods: **MixUp**, **Label Smoothing**, **Cosine Annealing LR Scheduler**
 
-30 classes, around ~500 images per class
+> 📓 Technical explanations are provided directly inside the notebook  
+> [`recyclable-waste-classification.ipynb`](./recyclable-waste-classification.ipynb) with detailed markdown cells.
 
-All images are in .png format
+---
 
-The model is based on EfficientNet-B0.
+## 📊 Metrics
+**Validation Accuracy:** ~84%  
+**Test Accuracy:** ~83%
 
-Applied various data augmentation techniques.
+- ✅ Strong **generalization** thanks to augmentation  
+- ⚡ Lightweight & efficient due to EfficientNet-B0 base  
+- 🔎 **Confusion Matrix** used to analyze class-based performance
 
-Used transfer learning followed by fine-tuning.
+**Challenges:**  
+- Some visually similar categories are hard to distinguish (e.g., `cardboard_boxes` vs `cardboard_packaging`).
 
-Added advanced methods such as MixUp, label smoothing, and Cosine Annealing LR scheduler.
+---
 
-Technical explanations of the project are included inside the notebook file recyclable-waste-classification.ipynb with detailed markdown cells.
+## ✨ Extras
+- 🖼️ **Grad-CAM** visualization to see which image regions the model focuses on.  
+- ⚙️ **Hyperparameter Optimization (HPO):** tuned learning rate & weight decay for better performance.  
 
-📊 Metrics
+---
 
-Results obtained after training:
+## 🚀 Conclusion & Future Work
+- ✔️ Successfully classified recyclable waste using an **EfficientNet-B0** model with competitive accuracy.  
+- 🔮 Future improvements:  
+  - Try larger EfficientNet models (B3, B4).  
+  - Deploy a real-time web demo (e.g., **Streamlit**).  
+  - Extend the dataset to improve accuracy further.  
 
-Validation Accuracy: ~84%
+This project provides a **solid foundation for AI-powered environmental solutions** 🌱.
 
-Test Accuracy: ~83%
+---
 
-A confusion matrix was visualized to analyze class-based performance.
+## 🔗 Links
+- 📂 [Kaggle Dataset](https://www.kaggle.com/datasets/alistairking/recyclable-and-household-waste-classification)
 
-Strengths:
-
-Strong generalization capability thanks to augmentation.
-
-Lightweight and efficient due to the EfficientNet base.
-
-Challenges:
-
-Some visually similar categories are harder to distinguish (e.g., cardboard_boxes vs cardboard_packaging).
-
-🚀 Extras
-
-Grad-CAM visualization was used to understand which image regions the model focuses on.
-
-Performed quick Hyperparameter Optimization (HPO) to improve learning rate and weight decay selection.
-
-✅ Conclusion & Future Work
-
-This work successfully classifies recyclable waste using an EfficientNet-B0-based model with competitive accuracy.
-
-Future improvements:
-
-Experiment with larger EfficientNet models (B3, B4).
-
-Deploy a real-time camera-based demo or a simple Streamlit web app.
-
-Extend the dataset to further improve accuracy.
-
-This project provides a sustainable foundation for AI-powered environmental solutions.
-
-🔗 Links
-
-Kaggle Dataset
